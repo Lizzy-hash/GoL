@@ -3,42 +3,32 @@
 #define _ENGINE_H
 
 
-
 #pragma once
-#include "board.h"
-#include <stdlib.h>
 
-class engine:
-		public board
+#include "board.h"
+#include <cstdlib>
+#include <conio.h>
+
+class engine : public board // why ???
 {
 
-	public:
-		engine() {
-			;
-		}
+public:
+    engine() = delete;
 
-		engine(unsigned row, unsigned col) :board(row, col) {};
-		
-		virtual ~engine() = 0;
+    engine(unsigned row, unsigned col) : board(row, col) {};
 
-		void play(board &b)
-		{
-			//petla
-			//analiza tablicy
-			//view();
-			//nie wolno tu zadnych cin cout i innych uzywac
-			//mozemy w txt albo api
+    virtual void view() = 0;
 
-			while (2 > 1)
-			{
-				view(b);
-				this->cycle_of_life();
-				system("cls");
-			}
-		}
-		
-	
-		virtual void view(board &b) = 0;
+    // get it? ??????????????
+    [[noreturn]] void play() {
+        while (2 > 1) {
+            view();
+            getch();
+            cycle_of_life();
+            system("cls");
+        }
+    }
+
 
 };
 

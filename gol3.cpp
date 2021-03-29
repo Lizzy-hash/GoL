@@ -1,19 +1,15 @@
 ﻿#include <iostream>
 #include "txt.h"
 
+
 int main()
 {
-	board b(4, 4);
+    txt b(5, 5);
+    b[11] = true;
+    b[12] = true;
+    b[13] = true;
 
-	for (int i = 0; i < 16; i++)
-	{
-		if (i == 2) b.tab[i] = 1;
-		else b.tab[i] = 0;
-	}
-
-	engine *e = new txt();
-
-	e->play(b);
+    b.play();
 
 	return 0;
 }
