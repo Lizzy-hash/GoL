@@ -27,7 +27,7 @@ public:
         switch (input) {
             case 'a':
                 current_position -= 1;
-                if (current_position % row == row-1) current_position += row;
+                if (current_position % row == row - 1) current_position += row;
                 break;
             case 'w':
                 current_position -= row; // idk które jest które
@@ -49,9 +49,13 @@ public:
                 tab[current_position] = !tab[current_position];
                 break;
             case ' ':
-                return true;
+                return true; // exit ui
 
             case '1':
+                if (current_position - 1 % row != row - 1) tab[current_position - 1] = true;
+                tab[current_position] = true;
+                if (current_position + 1 % row != 0) tab[current_position + 1] = true;
+
                 break;
             case '2':
                 break;
@@ -72,10 +76,7 @@ public:
                 if (i * row + j == position) {
                     if (tab[i * row + j]) printf("#<");
                     else printf("_<");
-
-
-                }
-                else {
+                } else {
                     if (tab[i * row + j]) printf("# ");
                     else printf("_ ");
                 }
@@ -95,11 +96,11 @@ public:
 
 
         int player_position = get_size() / 2;
-        std::cout<<"a w s d for controls\n"
-                   "space start's simulation\n"
-                   "e changes controlled square from dead to alive\n"
-                   "  and vice versa\n"
-                   "0-9 puts mos known shapes\n";
+        std::cout << "a w s d for controls\n"
+                     "space start's simulation\n"
+                     "e changes controlled square from dead to alive\n"
+                     "  and vice versa\n"
+                     "0-9 puts mos known shapes\n";
 
         while (2 > 1) {
 
@@ -107,6 +108,7 @@ public:
             player_input = getch();
             if (decode_input(player_input, player_position)) break;
             system("cls");
+
         }
     }
 
