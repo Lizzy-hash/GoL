@@ -19,17 +19,8 @@ public:
 
     virtual void view() = 0;
 
-    // get it? ??????????????
-    [[noreturn]] void play() {
-        while (2 > 1) {
-            view();
-            getch();
-            cycle_of_life();
-            system("cls");
-        }
-    }
 
-
+    virtual void play() = 0;
 };
 
 #endif //!_BOARD_H

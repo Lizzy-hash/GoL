@@ -5,8 +5,9 @@
 
 class board {
 protected:
-    unsigned row, col;
-    bool *tab;
+    unsigned row, col;  // ##  row = 2
+    bool *tab;          // ##  col = 3
+                        // ##
 
 public:
     board() {
