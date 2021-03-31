@@ -18,23 +18,24 @@ bool txt::decode_input(char input, int& current_position)
         switch (input) {
         case 'a':
             current_position -= 1;
-            if (current_position % row == row - 1) current_position += row;
+            if (current_position % col  == 0) current_position += col;
             break;
+
         case 'w':
-            current_position -= row;
+            current_position -= col;
             if (current_position < 0)
                 current_position = get_size() + current_position;
 
             break;
         case 's':
-            current_position += row;
+            current_position += col;
             if (current_position >= get_size())
                 current_position = current_position - get_size();
 
             break;
         case 'd':
             current_position += 1;
-            if (current_position % row == 0) current_position -= row;
+            if (current_position % col == 0) current_position -= col;
             break;
         case 'e':
             tab[current_position] = !tab[current_position];
@@ -68,20 +69,12 @@ void txt::gen_ui_frame(int position)
 
     for (unsigned i = 0; i < row; i++) {
         for (unsigned j = 0; j < col; j++) {
-            /*if (i * row + j == position) {
-                if (tab[i * row + j]) printf("#<");
+
+            if (i * col + j == position) {
+                if (tab[i * col + j]) printf("#<");
                 else printf("_<");
-            }
-            else {
-                if (tab[i * row + j]) printf("# ");
-                else printf("_ ");
-            }*/
-            if (i + j == position) {
-                if (tab[i  + j]) printf("#<");
-                else printf("_<");
-            }
-            else {
-                if (tab[i  + j]) printf("# ");
+            }else {
+                if (tab[i * col + j]) printf("# ");
                 else printf("_ ");
             }
         }

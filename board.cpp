@@ -48,7 +48,7 @@ bool board::dead_or_alive(int pos)
 
     unsigned live_count = 0;
 
-    unsigned in_cols = pos / col;
+    unsigned in_cols = pos / row;
     unsigned in_rows = pos % row;
 
     bool neighbors[8];

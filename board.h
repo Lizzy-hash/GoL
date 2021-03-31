@@ -13,9 +13,9 @@
 
 class board {
 protected:
-    unsigned row, col;
-    bool* tab;
-
+    unsigned row, col;  // ## col = 2
+    bool* tab;          // ## row = 3
+                        // ##
 public:
     board();
 
