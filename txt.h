@@ -2,35 +2,26 @@
 #define _TXT_H
 
 
-
 #pragma once
+
 #include "engine.h"
 #include <iostream>
 #include <conio.h>
+#include <windows.h>
 
-class txt:
-		public engine
-{
-	public:
-		void view(board &b)
-		{
-			for (int i = 0; i < 4; i++)
-			{
-				for (int j = 0; j < 4; j++)
-				{
-					bool a = b.show_element(i * b.row + j);
-					std::cout << a;
-				}
-				std::cout << std::endl;
-			}
+class txt : public engine {
+public:
+    txt(unsigned row, unsigned col) : engine(row, col) {};
 
-			_getch();
-		}
+    void view();
 
-		txt() :engine() {};
-		txt(unsigned row, unsigned col) :engine(row, col) {};
+    bool decode_input(char input, int& current_position);
+    void gen_ui_frame(int position);
 
-		virtual ~txt() = 0;
+    void ui();
+
+    void play();
+
 };
 
 #endif // !_TXT_H
