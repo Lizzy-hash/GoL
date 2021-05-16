@@ -1,0 +1,22 @@
+Jak się buduje sterte?
+
+Użyj pseudokodu
+
+Drzewko mamy - maksymalnie 2 gałęzie od węzła
+
+Najwyższa liczba musi być w korzeniu (od góry idą największe)
+
+wypełnianie kopca od lewej strony
+Rodzic zawsze większy od dziecka
+
+Algorytm:
+Działa jak kolejka
+wrzucamy 3 i staje się korzeniem
+wrzucamy 20 i stawiamy po lewo, pod trojką
+porównujemy wartości i jak dziecko jest większe od rodzica to wymieniamy
+
+dane do tablicy wpisuje się od góry idąc od lewej
+czyli drzewo z zeszytu: 957123
+
+indeksowanie: d1 = 2*indeks_rodzica + 1
+	      d2 = 2*indeks_rodzica + 2

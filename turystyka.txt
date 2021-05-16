@@ -1,0 +1,13 @@
+Szukanie ścieżki:
+	(jest jedna droga od jednego wierzchołka do drugiego)
+
+
+zbudować drzewo
+przeszukiwanie drzewa w głąb
+
+1. Minimalne drzewo rozpinające
+2. Znajdujemy ścieżkę między danym punktem
+3. Znajdujemy ścieżkę o najmniejszej przepustowości (na tej podstawie obliczamy przepustowość) i liczbę kursów
+4. PAMIĘTAĆ, ŻE KIEROWCA ZAJMUJE JEDNO MIEJSCE
+
+plik wynikowy ma mieć wyniki jeden pod drugim

@@ -1,0 +1,40 @@
+5 zadań będzie,
+na 1 zadanie będą 2 tygodnie, 3 ostatnie zadania na 3 tygodnie
+
+2 tygodnie na wysłanie zadań
+
+każde zadań jest punktowane na 10pkt.
+max. można zdobyć 50pkt.
+
+14 spotkań - 13 jest punktowanych (13pkt. za obecność)
+13pkt. za "aktywność" na zajęciach
+
+za każde zadanie można zdobyć dodatkowe punkty, za każdy tydzień
+
+Można zdobyć 76pkt. (100%)
+
+Zaliczenie przedmiotu = 60% (45,6pkt)
+
+Naszym celem jest zaliczyć!!
+Ocena zaliczająca przedmiot to ocena z egzaminu.
+
+Ocena rozłożona jest na 3 etapy (za zadanie):
+	1. kompilacja kodu i warningi, które się pojawiają (warningi = 2 punkty karne), aby nie było warningów zaleca stosowanie kompilatora,który w miarę standardowo podchodzi do kodu, VS2019. C++11 najlepiej, c++17 też kompiluje, z nowszymi może być problem
+	2. testy automatyczne pliku wynikowego (musi działać szybko, inaczej uznawane jest, że program nie działa) trzeba optymalizować
+	3. ocena formy zakodowania algorytmu (jeżeli przejdziemy testy) - sprawdzana jest samodzielność, zachęca do korzystania z pseudokodu (napisać w komentarzu, że korzystamy z pseudokodu i z jakiej strony go wzięliśmy)
+		nie ma obostrzeń jeśli chodzi o jakość kodu, po prostu ma działać i rozwiązywać problem.
+		nie trzeba używać klas
+
+Wszystko w jednym pliku .cpp pisać!!
+Będziemy wysyłać plik .cpp!!
+
+Tytułujemy maila w specyficzny sposób
+
+ASD2gr3_MrówczyńskaE_opis zadania/numer zadania  <--nazwa pliku cpp tak samo
+
+Obecności - przypominać, żeby była sprawdzana
+
+Poprawy zadań - na koniec semestru dwa zadania do poprawienia, na 70% zadanie dodatkowe na 15pkt.
+
+NIE UŻYWAĆ SYSTEM("PAUSE") itp.
+	

@@ -1,0 +1,26 @@
+ALGORYTM:
+	Step 1:
+		Kopcowanie
+		tworzymy tablicę z kopca <- wyświetlamy
+		Wyciągamy pierwszą wartość z tablicy i gdzieś odkładamy (sterta?)
+		Sprawdzamy kopiec, czy jest poprawny
+		Jeśli tak to wyciągamy pierwszą liczbę
+		Jeśli nie to układamy i wyciągamy
+		I powtarzamy 
+		
+		wyświetlać musimy od końca
+
+Sposób Michała jest lepszy
+	Zamieniamy indeks 0 z ostanim i zmniejszamy rozmiar tablicy o 1
+	kopcujemy
+	Wywalamy na n-1 nowy 0 indeks tablicy
+	i tak do końca
+	Jak posortowane to stop
+	Wypisujemy posortowane liczby
+
+Dopóki n>1
+kopcuj
+przestaw 
+n= n - 1
+
+można użyć vectora z stl

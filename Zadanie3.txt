@@ -1,0 +1,11 @@
+
+Minimalizacja ilości kursów sprowadza się do
+Liczba osób, która wejdzie między 1->2 jest 30,
+ale pasażerów jest 29, bo jest kierowca (?)
+
+(liczba osób do przewożenia / (maks_osob - 1)) ceiling
+
+algorytm Kruskala - minimalizacja drzewa
+algorytm Prima
+
+Wybrać jeden algorytm!!

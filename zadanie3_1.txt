@@ -1,0 +1,24 @@
+las to zbiór drzew
+
+Utwórz las L z wierzchołków oryginalnego grafu – każdy wierzchołek jest na początku osobnym drzewem.
+		|
+mam 7  wierzchołków
+
+las początkowy: {1,2,3,4,5,6,7}
+Zbiór S = {w1,w2,krawędź)
+
+pętla:
+	wybierz i usuń z S krawędź z minimalną wagą - usuwamy pierwszą, bo posortowaliśmy
+
+Utwórz zbiór S zawierający wszystkie krawędzie oryginalnego grafu.
+Dopóki S nie jest pusty oraz L nie jest jeszcze drzewem rozpinającym:
+Wybierz i usuń z S jedną z krawędzi o minimalnej wadze.
+Jeśli krawędź ta łączyła dwa różne drzewa, to dodaj ją do lasu L, tak aby połączyła dwa odpowiadające drzewa w jedno.
+W przeciwnym wypadku odrzuć ją.
+Po zakończeniu algorytmu L jest minimalnym drzewem rozpinającym.
+
+TRZEBA ZROBIĆ:
+tablica wejściowa S
+i druga tablica, która zawiera minimalne drzewo rozpinające
+las wierzchołków
+

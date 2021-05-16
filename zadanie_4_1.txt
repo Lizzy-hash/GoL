@@ -1,0 +1,2 @@
+8 - bitów
+nie ważne jakim znakiem operujemy bo beda liczby

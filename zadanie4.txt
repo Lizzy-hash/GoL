@@ -1,0 +1,4 @@
+i = początek podłańcucha 
+j = dochodzący znak
+
+zaimplementować na long long
