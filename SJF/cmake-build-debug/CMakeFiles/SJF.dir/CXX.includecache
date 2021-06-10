@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/STUDIA/SEMESTR4/Algorytmy/Cwiczenia/SJF/main.cpp
+iostream
+-
+cmath
+-
+algorithm
+-
+

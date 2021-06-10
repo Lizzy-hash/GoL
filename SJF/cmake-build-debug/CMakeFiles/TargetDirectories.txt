@@ -1,0 +1,3 @@
+D:/STUDIA/SEMESTR4/Algorytmy/Cwiczenia/SJF/cmake-build-debug/CMakeFiles/SJF.dir
+D:/STUDIA/SEMESTR4/Algorytmy/Cwiczenia/SJF/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/STUDIA/SEMESTR4/Algorytmy/Cwiczenia/SJF/cmake-build-debug/CMakeFiles/rebuild_cache.dir
